@@ -43,18 +43,6 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
                 </div>
                 <a class="btn btn-ghost text-xl bg-lime-400 rounded-xl">Blog</a>
             </div>
@@ -74,9 +62,9 @@
     </header>
     <main>
         <section>
-            <div class="flex justify-center space-x-5">
-                <button class="">Donation</button>
-                <button class="">History</button>
+            <div class="flex justify-center space-x-10 mb-10">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-[#B4F461]">History</button>
             </div>
             <div>
                 <!-- Card 1 -->
@@ -84,6 +72,14 @@
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="/assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
+                            <!-- First Donation Count Bar Start -->
+                            <div class="stats shadow">
+                                <div class="stat flex">
+                                    <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
+                                    <div class="stat-value">0 BDT</div>
+                                </div>
+                            </div>
+                            <!-- First Donation Count Bar End -->
                             <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
                             <p class="py-6">
                                 The recent floods in Noakhali have caused significant damage to homes infrastructure.
@@ -92,7 +88,9 @@
                                 supporting the relief efforts and making a positive impact on the lives of those in
                                 need.
                             </p>
-                            <button class="btn btn-primary">Donate Now</button>
+                            <input type="text" placeholder="Write Donation Amount"
+                                class="input input-bordered w-full max-w-xs" />
+                            <button class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -101,6 +99,14 @@
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="/assets/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
                         <div>
+                            <!-- Second Donation Count Bar Start -->
+                            <div class="stats shadow">
+                                <div class="stat flex">
+                                    <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
+                                    <div class="stat-value">600 BDT</div>
+                                </div>
+                            </div>
+                            <!-- Second Donation Count Bar End -->
                             <h1 class="text-3xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
                             <p class="py-6">
                                 The recent floods in Feni have devastated local communities, leading to severe
@@ -110,7 +116,9 @@
                                 Every contribution counts towards making a real difference. Please consider donating
                                 today to assist those in urgent need.
                             </p>
-                            <button class="btn btn-primary">Donate Now</button>
+                            <input type="text" placeholder="Write Donation Amount"
+                                class="input input-bordered w-full max-w-xs" />
+                            <button class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -137,14 +145,16 @@
                                 aiding in their recovery. Please consider making a donation to support these brave
                                 individuals in their time of need.
                             </p>
-                            <button class="btn btn-primary">Donate Now</button>
+                            <input type="text" placeholder="Write Donation Amount"
+                                class="input input-bordered w-full max-w-xs" />
+                            <button class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="footer bg-[#F9F7F3] p-20 mt-10">
 
     </footer>
 </body>
