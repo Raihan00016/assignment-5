@@ -5,14 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Tailwind CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <header>
-
+<body class="font-manrope">
+    <header class="justify-center flex mx-auto">
+        <div class="navbar bg-base-100 bg-[#F9F7F3] mb-40 pb-10 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                                <li><a>Submenu 1</a></li>
+                                <li><a>Submenu 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Item 3</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl bg-lime-400 rounded-xl">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex space-x-2.5">
+                <img src="/assets/logo.png" alt="">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="navbar-end">
+                <div class="stats">
+                    <div class="stat flex">
+                        <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
+                        <div class="stat-value">5500 BDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-
+        <section>
+            <div class="flex justify-center space-x-5">
+                <button class="">Donation</button>
+                <button class="">History</button>
+            </div>
+            <div>
+                <!-- Card 1 -->
+                <div class="hero rounded-2xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="/assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-3xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                            <p class="py-6">
+                                The recent floods in Noakhali have caused significant damage to homes infrastructure.
+                                Your donation will help provide essential supplies and to those affected by this
+                                disaster. Every contribution, big or small, makes difference. Please join us in
+                                supporting the relief efforts and making a positive impact on the lives of those in
+                                need.
+                            </p>
+                            <button class="btn btn-primary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="hero rounded-2xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="/assets/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <h1 class="text-3xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+                            <p class="py-6">
+                                The recent floods in Feni have devastated local communities, leading to severe
+                                disruption and loss. Your generous donation will help provide immediate aid, including
+                                food, clean water, and medical supplies, to those affected by this calamity. Together,
+                                we can offer crucial support and help rebuild lives in the aftermath of this disaster.
+                                Every contribution counts towards making a real difference. Please consider donating
+                                today to assist those in urgent need.
+                            </p>
+                            <button class="btn btn-primary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="hero rounded-2xl">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="/assets/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <!-- Third Donation Count Bar Start -->
+                            <div class="stats shadow">
+                                <div class="stat flex">
+                                    <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
+                                    <div class="stat-value">2400 BDT</div>
+                                </div>
+                            </div>
+                            <!-- Third Donation Count Bar End -->
+                            <h1 class="text-3xl font-bold">Aid for Injured in the Quota Movement</h1>
+                            <p class="py-6">
+                                The recent Quota movement has resulted in numerous injuries and significant hardship for
+                                many individuals. Your support is crucial in providing medical assistance,
+                                rehabilitation, and necessary supplies to those affected. By contributing, you help
+                                ensure that injured individuals receive the care and support they need during this
+                                challenging time. Every donation plays a vital role in alleviating their suffering and
+                                aiding in their recovery. Please consider making a donation to support these brave
+                                individuals in their time of need.
+                            </p>
+                            <button class="btn btn-primary">Donate Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
