@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+    <!-- Tailwind CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-manrope">
+    <header class="justify-center flex mx-auto sticky top-0 z-50 bg-white p-4">
+        <div class="navbar bg-base-100 bg-[#F9F7F3] mb-40 pb-10 ">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                </div>
+                <a href="" class="btn btn-ghost text-xl bg-lime-400 rounded-xl">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex space-x-2.5">
+                <img src="/assets/logo.png" alt="">
+                <h3>Donate Bangladesh</h3>
+            </div>
+            <div class="navbar-end">
+                <div class="stats">
+                    <div class="stat flex">
+                        <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
+                        <div class="stat-value">5500 BDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How can your contribution make a difference in Bangladesh
+                today?</div>
+            <div class="collapse-content">
+                <p> Your donation helps provide essential resources, such as food, clean water, education, and
+                    healthcare, to underprivileged communities. Whether supporting disaster relief efforts, empowering
+                    women, or fostering education, your contribution directly improves lives and builds a brighter
+                    future for Bangladesh.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">Would you like to dedicate your donation to a specific
+                project or community?</div>
+            <div class="collapse-content">
+                <p>Yes! You can choose to support various initiatives, such as healthcare, education, disaster relief,
+                    or women’s empowerment. Simply select the cause you are most passionate about, and your donation
+                    will be directed to that specific area.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">Interested in becoming a regular supporter?</div>
+            <div class="collapse-content">
+                <p>By becoming a regular supporter, you ensure sustainable, long-term impact. Choose to give monthly or
+                    yearly, and join a community of dedicated individuals committed to helping the most vulnerable.
+                    Regular contributions allow us to plan ahead and extend our reach even further.</p>
+            </div>
+        </div>
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">Want to learn more about how we ensure transparency and
+                accountability?</div>
+            <div class="collapse-content">
+                <p>We are committed to transparency and accountability in everything we do. You can visit our “Impact”
+                    page for detailed reports on how funds are spent, the success stories from our projects, and
+                    financial audits. Your trust is important to us, and we work diligently to make sure every donation
+                    is used effectively.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer bg-[#F9F7F3] p-20 mt-10">
+
+    </footer>
+</body>
+
+</html>
