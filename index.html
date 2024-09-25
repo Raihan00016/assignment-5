@@ -64,10 +64,10 @@
         <section>
             <div class="flex justify-center space-x-10 mb-10">
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">Donation</button>
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-[#B4F461]">History</button>
+                <button  class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg  bg-[#B4F461]">History</button>
             </div>
             <div>
-                <!-- Card 1 -->
+                <!-- Noakhali CARD -->
                 <div class="hero rounded-2xl">
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="/assets/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -76,7 +76,8 @@
                             <div class="stats shadow">
                                 <div class="stat flex">
                                     <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
-                                    <div class="stat-value">0 BDT</div>
+                                    <!-- B-1 -->
+                                    <span id="input-noakhali" class="stat-text">0 BDT</span>
                                 </div>
                             </div>
                             <!-- First Donation Count Bar End -->
@@ -88,13 +89,14 @@
                                 supporting the relief efforts and making a positive impact on the lives of those in
                                 need.
                             </p>
-                            <input type="text" placeholder="Write Donation Amount"
+                            <!-- W-1 -->
+                            <input id="btn-noakhali" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered w-full max-w-xs" />
-                            <button class="btn bg-[#B4F461]">Donate Now</button>
+                            <button id="btn-donate-1" class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
-                <!-- Card 2 -->
+                <!-- Feni CARD -->
                 <div class="hero rounded-2xl">
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="/assets/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -103,7 +105,8 @@
                             <div class="stats shadow">
                                 <div class="stat flex">
                                     <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
-                                    <div class="stat-value">600 BDT</div>
+                                    <!-- B-2 -->
+                                    <span id="input-feni" class="stat-text">600 BDT</span>
                                 </div>
                             </div>
                             <!-- Second Donation Count Bar End -->
@@ -116,13 +119,14 @@
                                 Every contribution counts towards making a real difference. Please consider donating
                                 today to assist those in urgent need.
                             </p>
-                            <input type="text" placeholder="Write Donation Amount"
+                            <!-- W-2 -->
+                            <input id="btn-feni" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered w-full max-w-xs" />
-                            <button class="btn bg-[#B4F461]">Donate Now</button>
+                            <button id="btn-donate-2" class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
-                <!-- Card 3 -->
+                <!-- Quota CARD -->
                 <div class="hero rounded-2xl">
                     <div class="hero-content flex-col lg:flex-row">
                         <img src="/assets/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
@@ -131,7 +135,8 @@
                             <div class="stats shadow">
                                 <div class="stat flex">
                                     <div class="stat-title"><img src="/assets/coin.png" alt=""></div>
-                                    <div class="stat-value">2400 BDT</div>
+                                    <!-- B-3 -->
+                                    <span id="input-quota" class="stat-text">0 BDT</span>
                                 </div>
                             </div>
                             <!-- Third Donation Count Bar End -->
@@ -145,9 +150,10 @@
                                 aiding in their recovery. Please consider making a donation to support these brave
                                 individuals in their time of need.
                             </p>
-                            <input type="text" placeholder="Write Donation Amount"
+                            <!-- W-3 -->
+                            <input id="btn-quota" type="text" placeholder="Write Donation Amount"
                                 class="input input-bordered w-full max-w-xs" />
-                            <button class="btn bg-[#B4F461]">Donate Now</button>
+                            <button id="btn-donate-3" class="btn bg-[#B4F461]">Donate Now</button>
                         </div>
                     </div>
                 </div>
@@ -157,6 +163,7 @@
     <footer class="footer bg-[#F9F7F3] p-20 mt-10">
 
     </footer>
+    <script src="js/donate.js"></script>
 </body>
 
 </html>
